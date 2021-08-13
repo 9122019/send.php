@@ -2,11 +2,8 @@
 
 /*
 
-Передать лида можно POST методом на https://lawtask.ru/wh.php
+Передать лида можно POST методом на https://lawtask.ru/wh_new.php
 Важно корректно указать ключи передаваемого массива, чтобы на входе разобрать где имя, а где город.
-
-Получить информацию о количестве успешно полученных и сохраненных от вас лидов, 
-а также о последнем сохраненном лиде можно по этому адресу: https://lawtask.ru/feedback.php
 
 */
 
@@ -29,7 +26,7 @@ foreach ($post as $key => $value) {
 
 // отправляем
 
-$url = 'https://lawtask.ru/wh.php';
+$url = 'https://lawtask.ru/wh_new.php';
 	
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
